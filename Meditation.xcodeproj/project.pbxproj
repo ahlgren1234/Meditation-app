@@ -11,6 +11,7 @@
 		D0FF4EF327ABF6F400952D4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF4EF227ABF6F400952D4E /* ContentView.swift */; };
 		D0FF4EF527ABF6F500952D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FF4EF427ABF6F500952D4E /* Assets.xcassets */; };
 		D0FF4EF827ABF6F500952D4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FF4EF727ABF6F500952D4E /* Preview Assets.xcassets */; };
+		D0FF4F0127ABF80D00952D4E /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF4F0027ABF80D00952D4E /* MeditationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D0FF4EF227ABF6F400952D4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0FF4EF427ABF6F500952D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0FF4EF727ABF6F500952D4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0FF4F0027ABF80D00952D4E /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D0FF4EF027ABF6F400952D4E /* MeditationApp.swift */,
 				D0FF4EF227ABF6F400952D4E /* ContentView.swift */,
+				D0FF4F0027ABF80D00952D4E /* MeditationView.swift */,
 				D0FF4EF427ABF6F500952D4E /* Assets.xcassets */,
 				D0FF4EF627ABF6F500952D4E /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0FF4EF327ABF6F400952D4E /* ContentView.swift in Sources */,
+				D0FF4F0127ABF80D00952D4E /* MeditationView.swift in Sources */,
 				D0FF4EF127ABF6F400952D4E /* MeditationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
