@@ -9,13 +9,14 @@ import SwiftUI
 
 struct MeditationView: View {
     
+    @StateObject var meditationVM: MeditationViewModel
     @State private var showPlayer = false
     
     var body: some View {
         VStack(spacing: 0) {
             // MARK: Image
             
-            Image("image-stones")
+            Image(meditationVM.meditation.image)
                 .resizable()
                 .scaledToFill()
                 .frame(height: UIScreen.main.bounds.height / 3)
@@ -33,14 +34,14 @@ struct MeditationView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Music")
                         
-                        Text("0s")
+                        Text(DateComponentsFormatter.abbreviated.string(from: meditationVM.meditation.duration) ?? meditationVM.meditation.duration.formatted() + "s")
                     }
                     .font(.subheadline)
                     .textCase(.uppercase)
                     .opacity(0.7)
                     
                     // MARK Title
-                    Text("1 Minute Relaxing Meditation")
+                    Text(meditationVM.meditation.title)
                         .font(.title)
                     
                     // MARK: Play Button
@@ -59,7 +60,7 @@ struct MeditationView: View {
 
                     
                     // MARK: Description
-                    Text("Clear your mind and slumber into nothingness. Allocate only a few moments for a quick breather.")
+                    Text(meditationVM.meditation.description)
                     
                     Spacer()
                 }
@@ -70,13 +71,14 @@ struct MeditationView: View {
         }
         .ignoresSafeArea()
         .fullScreenCover(isPresented: $showPlayer) {
-            PlayerView()
+            PlayerView(meditationVM: meditationVM)
         }
     }
 }
 
 struct MeditationView_Previews: PreviewProvider {
+    static let meditationVM = MeditationViewModel(meditation: Meditation.data)
     static var previews: some View {
-        MeditationView()
+        MeditationView(meditationVM: meditationVM)
     }
 }
