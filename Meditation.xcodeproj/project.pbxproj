@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D06F86B927B50C8400BE3605 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F86B827B50C8400BE3605 /* AudioManager.swift */; };
+		D06F86BB27B510EF00BE3605 /* meditation1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D06F86BA27B510EF00BE3605 /* meditation1.mp3 */; };
 		D0FF4EF127ABF6F400952D4E /* MeditationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF4EF027ABF6F400952D4E /* MeditationApp.swift */; };
 		D0FF4EF327ABF6F400952D4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF4EF227ABF6F400952D4E /* ContentView.swift */; };
 		D0FF4EF527ABF6F500952D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FF4EF427ABF6F500952D4E /* Assets.xcassets */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D06F86B827B50C8400BE3605 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		D06F86BA27B510EF00BE3605 /* meditation1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation1.mp3; sourceTree = "<group>"; };
+		D06F86BC27B5119C00BE3605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D0FF4EED27ABF6F400952D4E /* Meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FF4EF027ABF6F400952D4E /* MeditationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationApp.swift; sourceTree = "<group>"; };
 		D0FF4EF227ABF6F400952D4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,14 +66,17 @@
 		D0FF4EEF27ABF6F400952D4E /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
+				D06F86BC27B5119C00BE3605 /* Info.plist */,
 				D0FF4EF027ABF6F400952D4E /* MeditationApp.swift */,
 				D0FF4EF227ABF6F400952D4E /* ContentView.swift */,
 				D0FF4F0027ABF80D00952D4E /* MeditationView.swift */,
 				D0FF4F0827AC08C400952D4E /* Extensions.swift */,
 				D0FF4F0627AC062300952D4E /* MeditationViewModel.swift */,
+				D06F86B827B50C8400BE3605 /* AudioManager.swift */,
 				D0FF4F0227ABFCD700952D4E /* PlayerView.swift */,
 				D0FF4F0427AC011600952D4E /* PlaybackControlButton.swift */,
 				D0FF4EF427ABF6F500952D4E /* Assets.xcassets */,
+				D06F86BA27B510EF00BE3605 /* meditation1.mp3 */,
 				D0FF4EF627ABF6F500952D4E /* Preview Content */,
 			);
 			path = Meditation;
@@ -140,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06F86BB27B510EF00BE3605 /* meditation1.mp3 in Resources */,
 				D0FF4EF827ABF6F500952D4E /* Preview Assets.xcassets in Resources */,
 				D0FF4EF527ABF6F500952D4E /* Assets.xcassets in Resources */,
 			);
@@ -154,6 +163,7 @@
 			files = (
 				D0FF4EF327ABF6F400952D4E /* ContentView.swift in Sources */,
 				D0FF4F0127ABF80D00952D4E /* MeditationView.swift in Sources */,
+				D06F86B927B50C8400BE3605 /* AudioManager.swift in Sources */,
 				D0FF4F0527AC011600952D4E /* PlaybackControlButton.swift in Sources */,
 				D0FF4EF127ABF6F400952D4E /* MeditationApp.swift in Sources */,
 				D0FF4F0727AC062300952D4E /* MeditationViewModel.swift in Sources */,
@@ -292,6 +302,7 @@
 				DEVELOPMENT_TEAM = 6UC9ZC96C6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +332,7 @@
 				DEVELOPMENT_TEAM = 6UC9ZC96C6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
